@@ -48,7 +48,7 @@ function UserList({
             <p>
                 <a onClick={handleShowEditModal.bind(this, record)}>编辑</a>
                 &nbsp;
-                <Popconfirm title="确定要删除吗？" onConfirm={handleDelete.bind(this, record.id)}>
+                <Popconfirm title="你确定要删除吗？" onConfirm={handleDelete.bind(this, record.id)}>
                     <a>删除</a>
                 </Popconfirm>
             </p>
