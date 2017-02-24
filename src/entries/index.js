@@ -17,31 +17,23 @@ import { fetch } from '../services'
 const sagaMiddleware = createSagaMiddleware();
 const initialState = {};
 const enhancer = compose(
-        applyMiddleware(sagaMiddleware),
-        window.devToolsExtension ? window.devToolsExtension() : f = > f
-)
-;
+    applyMiddleware(sagaMiddleware),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+);
 const store = createStore(combineReducers({
-    ...reducers, routing,
-}),
-initialState, enhancer
-)
-;
+  ...reducers, routing,
+}), initialState, enhancer);
 
 if (module.hot) {
-    module.hot.accept('../reducers', () = > {
-        const reducers = require('../reducers');
-    const combinedReducers = combineReducers({...reducers, routing
-})
-    ;
+  module.hot.accept('../reducers', () => {
+    const reducers = require('../reducers');
+    const combinedReducers = combineReducers({...reducers, routing});
     store.replaceReducer(combinedReducers);
-})
-    ;
-    module.hot.accept('../sagas/SagaManager', () = > {
-        SagaManager.cancelSagas(store);
+  });
+  module.hot.accept('../sagas/SagaManager', () => {
+    SagaManager.cancelSagas(store);
     require('../sagas/SagaManager').default.startSagas(sagaMiddleware);
-})
-    ;
+  });
 }
 
 const history = syncHistoryWithStore(hashHistory, store);
@@ -50,12 +42,10 @@ SagaManager.startSagas(sagaMiddleware);
 //////////////////////
 // Render
 
-let render = () =
->
-{
-    const Routes = require('../routes/index');
-    fetch({api: 'getUserMenus'}).then(({jsonResult}) = > {
-        ReactDOM.render(
+let render = () => {
+  const Routes = require('../routes/index');
+  fetch({api: 'getUserMenus'}).then(({ jsonResult })=> {
+    ReactDOM.render(
     < Provider
     store = {store} >
         < Routes
@@ -63,40 +53,32 @@ let render = () =
     menus = {jsonResult} / >
         < / Provider >
         , document.getElementById('root')
-)
+    )
     ;
-})
+  })
 
-}
-;
+};
 
 if (module.hot) {
-    const renderNormally = render;
-    const renderException = (error) =
->
-    {
-        const RedBox = require('redbox-react');
-        ReactDOM.render( < RedBox
-        error = {error} / >, document.getElementById('root')
+  const renderNormally = render;
+  const renderException = (error) => {
+    const RedBox = require('redbox-react');
+    ReactDOM.render( < RedBox
+    error = {error} / >, document.getElementById('root')
     )
-        ;
+    ;
+  };
+  render = () => {
+    try {
+      renderNormally();
+    } catch (error) {
+      console.error('error', error);
+      renderException(error);
     }
-    ;
-    render = () =
->
-    {
-        try {
-            renderNormally();
-        } catch (error) {
-            console.error('error', error);
-            renderException(error);
-        }
-    }
-    ;
-    module.hot.accept('../routes/index', () = > {
-        render();
-})
-    ;
+  };
+  module.hot.accept('../routes/index', () => {
+    render();
+  });
 }
 
 render();

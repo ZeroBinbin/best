@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/mock/users-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/sagas/deletelist-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/sagas/createlist-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/reducers/__tests__/users-test-compiled.js" />
+        <item url="file://$PROJECT_DIR$/mock/getUserMenus-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/mock/users-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/sagas/deletelist-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/sagas/createlist-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/reducers/__tests__/users-test-compiled.js" />
+      <root url="file://$PROJECT_DIR$/mock/getUserMenus-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

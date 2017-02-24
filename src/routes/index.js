@@ -9,14 +9,12 @@ import { combine ,find }                   from '../util/ArrayOfObject'
 
 const context = require.context('./', false, /\.jsx$/);
 const keys = context.keys();
-const components = keys.map((key) = > {
-        return {
-            componnentName: key.match(/\.\/(.*)\.jsx$/)[1],
-            component: context(key)
-        }
+const components = keys.map((key)=> {
+    return {
+        componnentName: key.match(/\.\/(.*)\.jsx$/)[1],
+        component: context(key)
     }
-)
-;
+});
 const componentRouteMap = combine(routeMaps, components);
 
 function Routes({ history ,menus }) {
