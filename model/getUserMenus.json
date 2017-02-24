@@ -1,0 +1,282 @@
+﻿{
+  "data": [
+    {
+      "menuId": 1,
+      "menuName": "系统总览",
+      "menuUrl": "ptzl",
+      "parentId": null,
+      "order": 1,
+      "parentMenu": null,
+      "subMenu": null,
+      "hasMenu": true
+    },
+    {
+      "menuId": 2,
+      "menuName": "系统详情",
+      "menuUrl": "ptxq",
+      "parentId": null,
+      "order": 2,
+      "parentMenu": null,
+      "subMenu": null,
+      "hasMenu": true
+    },
+    {
+      "menuId": 3,
+      "menuName": "协同办公",
+      "menuUrl": "system",
+      "parentId": null,
+      "order": 3,
+      "parentMenu": null,
+      "subMenu": [
+        {
+          "menuId": 9,
+          "menuName": "系统管理",
+          "menuUrl": null,
+          "parentId": "3",
+          "order": 1,
+          "parentMenu": null,
+          "subMenu": [
+            {
+              "menuId": 12,
+              "menuName": "用户管理",
+              "menuUrl": "user.html",
+              "parentId": "9",
+              "order": 1,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 13,
+              "menuName": "角色管理",
+              "menuUrl": "role.html",
+              "parentId": "9",
+              "order": 2,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 14,
+              "menuName": "菜单管理",
+              "menuUrl": "menu.html",
+              "parentId": "9",
+              "order": 3,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 15,
+              "menuName": "部门管理",
+              "menuUrl": "depart.html",
+              "parentId": "9",
+              "order": 4,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            }
+          ],
+          "hasMenu": true
+        },
+        {
+          "menuId": 10,
+          "menuName": "考核管理",
+          "menuUrl": null,
+          "parentId": "3",
+          "order": 2,
+          "parentMenu": null,
+          "subMenu": [
+            {
+              "menuId": 17,
+              "menuName": "江西考核",
+              "menuUrl": "exam.html",
+              "parentId": "10",
+              "order": 1,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            }
+          ],
+          "hasMenu": true
+        },
+        {
+          "menuId": 11,
+          "menuName": "情报管理",
+          "menuUrl": null,
+          "parentId": "3",
+          "order": 3,
+          "parentMenu": null,
+          "subMenu": [
+            {
+              "menuId": 18,
+              "menuName": "案情下达",
+              "menuUrl": "case_distribute.html",
+              "parentId": "11",
+              "order": 1,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 19,
+              "menuName": "案情上报",
+              "menuUrl": "case_reply.html",
+              "parentId": "11",
+              "order": 2,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            }
+          ],
+          "hasMenu": true
+        }
+      ],
+      "hasMenu": true
+    },
+    {
+      "menuId": 4,
+      "menuName": "智能集成",
+      "menuUrl": "qbjj",
+      "parentId": null,
+      "order": 4,
+      "parentMenu": null,
+      "subMenu": [
+        {
+          "menuId": 30,
+          "menuName": "社交工具",
+          "menuUrl": "sjgj",
+          "parentId": "4",
+          "order": 1,
+          "parentMenu": null,
+          "subMenu": null,
+          "hasMenu": true
+        },
+        {
+          "menuId": 31,
+          "menuName": "网综落地",
+          "menuUrl": "wzld",
+          "parentId": "4",
+          "order": 3,
+          "parentMenu": null,
+          "subMenu": null,
+          "hasMenu": true
+        },
+        {
+          "menuId": 32,
+          "menuName": "情报资源",
+          "menuUrl": "qbzy",
+          "parentId": "4",
+          "order": 4,
+          "parentMenu": null,
+          "subMenu": null,
+          "hasMenu": true
+        }
+      ],
+      "hasMenu": true
+    },
+    {
+      "menuId": 5,
+      "menuName": "情报智搜",
+      "menuUrl": "qbzs",
+      "parentId": null,
+      "order": 5,
+      "parentMenu": null,
+      "subMenu": null,
+      "hasMenu": true
+    },
+    {
+      "menuId": 6,
+      "menuName": "智能侦查",
+      "menuUrl": "znzc",
+      "parentId": null,
+      "order": 6,
+      "parentMenu": null,
+      "subMenu": null,
+      "hasMenu": true
+    },
+    {
+      "menuId": 7,
+      "menuName": "网情感知",
+      "menuUrl": "xyyj",
+      "parentId": null,
+      "order": 7,
+      "parentMenu": null,
+      "subMenu": null,
+      "hasMenu": true
+    },
+    {
+      "menuId": 20,
+      "menuName": "台账管理",
+      "menuUrl": "ledger.html",
+      "parentId": null,
+      "order": 8,
+      "parentMenu": null,
+      "subMenu": [
+        {
+          "menuId": 27,
+          "menuName": "台账管理",
+          "menuUrl": "",
+          "parentId": "20",
+          "order": 1,
+          "parentMenu": null,
+          "subMenu": [
+            {
+              "menuId": 22,
+              "menuName": "背景资料",
+              "menuUrl": "bjzl",
+              "parentId": "27",
+              "order": 1,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 23,
+              "menuName": "工作对象",
+              "menuUrl": "gzdx",
+              "parentId": "27",
+              "order": 2,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 24,
+              "menuName": "目标线索",
+              "menuUrl": "mbxs",
+              "parentId": "27",
+              "order": 3,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 25,
+              "menuName": "网站阵地",
+              "menuUrl": "wzzd",
+              "parentId": "27",
+              "order": 4,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            },
+            {
+              "menuId": 26,
+              "menuName": "对象关系",
+              "menuUrl": "dxgx",
+              "parentId": "27",
+              "order": 5,
+              "parentMenu": null,
+              "subMenu": null,
+              "hasMenu": true
+            }
+          ],
+          "hasMenu": true
+        }
+      ],
+      "hasMenu": true
+    }
+  ],
+  "success": true
+}

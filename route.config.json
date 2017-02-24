@@ -1,0 +1,8 @@
+{
+  "routeMaps": [
+    {
+      "componentName": "User.jsx",
+      "url": "/users"
+    }
+  ]
+}

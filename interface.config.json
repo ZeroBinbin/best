@@ -1,0 +1,44 @@
+{
+  "interfaces": [
+    {
+      "name": "createUser",
+      "url": "api/users",
+      "options": {
+        "method": "post"
+      },
+      "desc": "添加用户"
+    },
+    {
+      "name": "queryUser",
+      "url": "api/users",
+      "options": {
+        "method": "get"
+      },
+      "desc": "查询用户"
+    },
+    {
+      "name": "deleteUser",
+      "url": "api/users",
+      "options": {
+        "method": "delete"
+      },
+      "desc": "删除用户"
+    },
+    {
+      "name": "updateUser",
+      "url": "api/users",
+      "options": {
+        "method": "put"
+      },
+      "desc": "修改用户"
+    },
+    {
+      "name": "getUserMenus",
+      "url": "getUserMenus",
+      "desc": "获取用户有权限的页面列表"
+    }
+  ],
+  "fetchDefault": {
+    "method": "post"
+  }
+}
